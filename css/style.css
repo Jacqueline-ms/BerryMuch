@@ -18,6 +18,26 @@
   position: absolute;
 }
 
+.iframe-container{
+  /* margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; */
+}
+
+iframe{
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .img-logo {
+    margin-left: -122px;
+    left: 50%;
+    margin-top: 0;
+  }
+}
+
 body {
   font-family: "Montserrat", Arial, sans-serif;
   font-weight: 300;
@@ -276,7 +296,7 @@ h1, h2, h3, h4, h5, h6, figure {
   color: #000;
 }
 .fh5co-nav ul li.active > a {
-  color: #cabcab !important;
+  color: #ffffff !important;
 }
 .fh5co-nav ul li .form-group {
   border: 1px solid red;
@@ -555,8 +575,16 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 @media screen and (max-width: 768px) {
   .intro h2 {
-    font-size: 30px;
+    /* font-size: 30px;
     line-height: 45px;
+    margin-top: 250px; */
+
+    text-align: center;
+    font-size: 6.5vw;
+    /* max-width: 100%; */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: 270px; 
   }
 }
 .intro h2 .fh5co-highlight {
